@@ -3,11 +3,10 @@
   margin: 0;
 }
 .header {
-  height: 100%;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/public/images/banner2.jpg);
-
+  height: 100%;
   background-position: center;
   background-attachment: fixed;
   padding-top: 20px;
@@ -33,10 +32,11 @@
 .header h1 {
   padding-top: 260px;
   padding-bottom: 0;
-  font-size: 55px;
+  font-size: 70px;
 }
 .header p {
   margin: 18px 0;
+  font-size: 30px;
 }
 
 .input-group {
@@ -74,6 +74,10 @@ h1 {
   text-align: center;
   padding-bottom: 30px;
 }
+
+.feature-img {
+  position: relative;
+}
 .feature-img img {
   width: 100%;
 }
@@ -92,10 +96,39 @@ h1 {
 .feature-details .fas {
   box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
 }
+.feature-details {
+  padding: 20px;
+  text-align: justify;
+}
 
 .feature-details h4 {
   font-weight: 600;
+  margin-top: 20px;
+}
+
+.feature-box {
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  margin-bottom: 30px;
 }
 .gallery {
-  padding-bottom: ;
+  padding: 100px 0;
+  background: #efefef;
+}
+.gallery-box img {
+  width: 100;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.gallery-box img :hover {
+  transform: scale (1.1);
+}
+.gallery-box h4 {
+  width: 200px;
+  text-align: center;
+  font-weight: 600;
+}
+.gallery-box {
+  position: relative;
+  margin-bottom: 30px;
 }
