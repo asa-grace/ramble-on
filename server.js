@@ -11,29 +11,29 @@ const dotenv = require("dotenv");
 
 dotenv.config({ path: "./.env" });
 
-const db = mysql.createConnection({
-  host: process.env.DATABASE_HOST,
-  user: process.env.DATABASE_USER,
-  passport: process.env.DATABASE_PASSWORD,
-  database: process.env.DATABASE,
-  //need to create a database(rumbleon-login)
-});
+// const db = mysql.createConnection({
+//   host: process.env.DATABASE_HOST,
+//   user: process.env.DATABASE_USER,
+//   passport: process.env.DATABASE_PASSWORD,
+//   database: process.env.DATABASE,
+//   //need to create a database(rumbleon-login)
+// });
 
 //this dirc will include style
 const publicDirectory = path.join(__dirname, "./public");
 app.use(express.static(publicDirectory));
 
 // for handlebars
-app.set("view engine", "hbs");
+app.set("view engine", "/views/index");
 
 //conection
-db.connect((error) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("mySql is connected....");
-  }
-});
+// db.connect((error) => {
+//   if (error) {
+//     console.log(error);
+//   } else {
+//     console.log("mySql is connected....");
+//   }
+// });
 
 const port = process.env.PORT || 3001;
 
