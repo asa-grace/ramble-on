@@ -4,8 +4,6 @@ const exphbs = require("express-handlebars");
 const app = express();
 const path = require("path");
 
-const hbs = exphbs.create({});
-
 // const passport = require("passport");
 // const localStrategy = require("passport-local").Strategy;
 const bcrypt = require("bcrypt");
@@ -26,8 +24,8 @@ dotenv.config({ path: "./.env" });
 const publicDirectory = path.join(__dirname, "./public");
 app.use(express.static(publicDirectory));
 
-// for handlebars
-app.engine("handlebars", hbs.engine);
+// Set Handlebars as the default template engine.
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //conection
