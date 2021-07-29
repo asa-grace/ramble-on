@@ -26,9 +26,11 @@
     "express-session": "^1.17.2",
     "inquirer": "^8.1.2",
     "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
     "nodemon": "^2.0.12",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "sequelize": "^6.6.5",
     "uuid": "^8.3.2"
   }
 }

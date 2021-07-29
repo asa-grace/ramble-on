@@ -3,9 +3,12 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const app = express();
 const path = require("path");
+
+const hbs = exphbs.create({});
+
 // const passport = require("passport");
 // const localStrategy = require("passport-local").Strategy;
-// const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt");
 const mysql = require("mysql");
 const dotenv = require("dotenv");
 
@@ -24,7 +27,8 @@ const publicDirectory = path.join(__dirname, "./public");
 app.use(express.static(publicDirectory));
 
 // for handlebars
-app.set("view engine", "/views/index");
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
 
 //conection
 // db.connect((error) => {
