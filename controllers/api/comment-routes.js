@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Content } = require('../../models');
+const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
-  Content.findAll()
-    .then(dbContentData => res.json(dbContentData))
+  Comment.findAll()
+    .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -14,13 +14,12 @@ router.get('/', (req, res) => {
 router.post('/', withAuth, (req, res) => {
   // check the session
   if (req.session) {
-    Content.create({
+    Comment.create({
       comment_text: req.body.comment_text,
+      user_id: req.session.user_id,
       post_id: req.body.post_id,
-      // use the id from the session
-      user_id: req.session.user_id
     })
-      .then(dbContentData => res.json(dbContentData))
+      .then(dbCommentData => res.json(dbCommentData))
       .catch(err => {
         console.log(err);
         res.status(400).json(err);
@@ -30,17 +29,17 @@ router.post('/', withAuth, (req, res) => {
 
 router.delete('/:id', withAuth, (req, res) => {
   if (req.session) {
-    Content.destroy({
+    Comment.destroy({
       where: {
         id: req.params.id
       }
     })
-      .then(dbContentData => {
-        if (!dbContentData) {
-          res.status(404).json({ message: 'No content found with this id!' });
+      .then(dbCommentData => {
+        if (!dbCommentData) {
+          res.status(404).json({ message: 'No comment found with this id!' });
           return;
         }
-        res.json(dbContentData);
+        res.json(dbCommentData);
       })
       .catch(err => {
         console.log(err);
