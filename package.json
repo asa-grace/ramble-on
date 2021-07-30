@@ -5,16 +5,6 @@
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
-<<<<<<< HEAD
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "handlebars": "^4.7.7",
-    "node": "^16.5.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-=======
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
@@ -27,7 +17,6 @@
   "devDependencies": {},
   "scripts": {
     "test": "jest",
->>>>>>> be8c21f2ae8c008e2e6199174e77a40db862ccd2
     "start": "node server.js"
   },
   "repository": {
