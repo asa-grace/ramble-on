@@ -116,8 +116,9 @@ h1 {
   padding: 100px 0;
   background: #efefef;
 }
+
 .gallery-box img {
-  width: 50;
+  width: 100%;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
@@ -129,8 +130,4 @@ h1 {
   width: 200px;
   text-align: center;
   font-weight: 600;
-}
-.gallery-box {
-  position: relative;
-  margin-bottom: 30px;
 }
