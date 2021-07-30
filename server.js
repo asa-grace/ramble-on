@@ -1,8 +1,9 @@
 const path = require('path');
 const express = require('express');
-// const exphbs = require('express-handlebars');
 const session = require('express-session');
+const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -10,14 +11,15 @@ const PORT = process.env.PORT || 3001;
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+//secret variable is stored in the .env file which has been required above
 const sess = {
-    secret: process.env.secret,
-    cookie: {},
-    resave: false,
-    saveUninitialized: true,
-    store: new SequelizeStore({
-        db: sequelize
-    })
+  secret: process.env.secret,
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
 };
 
 app.use(session(sess));
@@ -28,11 +30,14 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+// Built in Express.js middleware function that can take all the contents of a folder and serve them as static assets
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(require('./controllers'));
+// turn on routes
+//app.use(require('./controllers/'));
 
+// turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log('Now listening'));
 });
