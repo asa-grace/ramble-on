@@ -3,12 +3,12 @@
   margin: 0;
 }
 .header {
-  background-size: cover;
+  /* background-size: cover; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/public/images/banner2.jpg);
-  /* height: 100%;
-    background-position: center;
-    background-attachment: fixed;*/
+  /* height: auto;
+  background-position: center;
+  background-attachment: fixed; */
   padding-top: 20px;
   text-align: center;
   color: #fff;
@@ -32,13 +32,13 @@
   align-items: center;
 }
 .header h1 {
-  padding-top: 260px;
+  padding-top: 200px;
   padding-bottom: 20px;
   font-size: 50px;
 }
 .header p {
   margin: 18px 0;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .input-group {
@@ -83,14 +83,7 @@ h1 {
 .feature-img img {
   width: 100%;
 }
-.rating {
-  padding-left: 50%;
-  float: right;
-  background: #fff;
-  bottom: -1px;
-  right: 0;
-  position: absolute;
-}
+
 .features .fas {
   font-size: 15px;
   color: #ff5722;
@@ -117,17 +110,40 @@ h1 {
   background: #efefef;
 }
 
+.gallery p {
+  font-size: 25px;
+  text-align: center;
+}
+
 .gallery-box img {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s;
+  transition: all 0.2s ease-in-out;
 }
 .gallery-box img :hover {
-  transform: scale (1.1);
+  transform: scale(1.1);
 }
+
 .gallery-box h4 {
-  width: 200px;
-  text-align: center;
+  display: block;
+  color: #fff;
+  text-shadow: -2px 2px 2px #000;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
   font-weight: 600;
+}
+
+.gallery-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+.banner {
+  height: 80%;
+  background-image: url(/public/images/banner3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
