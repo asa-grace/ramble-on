@@ -36,7 +36,7 @@
                 <h4>Register Form</h4>
             </div>
             <div class="card-body">
-                <form>
+                <form action="/user/subscribe" method="POST">
                     <div class="form-group">
                         <label for="email">Name</label>
                         <input type="text" class="form-control" id="name" name="name">
@@ -52,6 +52,11 @@
                         <input type="text" class="form-control" id="password" name="password">
 
                     </div>
+                    <div class="form-group">
+                        <label for="passwordConfirm">Confirm Password</label>
+                        <input type="text" class="form-control" id="passwordConfirm" name="passwordConfirm">
+
+                    </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Remember me</label>
@@ -60,6 +65,10 @@
                 </form>
             </div>
         </div>
+        <!-- handlebars -->
+        <!-- {{#if message}}
+        <h4 class="alert alert-danger mt-4">{{message}}</h4>
+        {{/if}} -->
     </div>
 
 
