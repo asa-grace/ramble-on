@@ -2,25 +2,26 @@
   padding: 0;
   margin: 0;
 }
-.header {
+.navbar {
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/public/images/banner3.jpg);
-  height: auto;
+    url(/images/banner3.jpg);
+  height: 900px;
   background-position: center;
   background-attachment: fixed;
   padding-top: 20px;
   text-align: center;
   color: #fff;
 }
-.header img {
+
+.navbar img {
   width: 170px;
   float: left;
 }
 
-.login-btn {
+.login-btn,
+.home-btn {
   width: 100px;
-  padding: 8px 0;
   outline: none !important;
   border: 2px solid #fff;
   border-radius: 50px;
@@ -28,11 +29,15 @@
   color: #fff;
   float: left;
 }
+
+.nav-item {
+  padding: 700px 25px 0px 25px;
+}
 .input {
   align-items: center;
 }
-.header h1 {
-  padding-top: 50px;
+.navbar h1 {
+  padding-top: 750px;
   padding-bottom: 30px;
   font-size: 50px;
 }
