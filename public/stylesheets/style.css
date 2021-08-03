@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-.navbar {
+.header {
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/banner3.jpg);
@@ -14,7 +14,7 @@
   color: #fff;
 }
 
-.navbar img {
+.header img {
   width: 170px;
   float: left;
 }
@@ -30,14 +30,11 @@
   float: left;
 }
 
-.nav-item {
-  padding: 700px 25px 0px 25px;
-}
 .input {
   align-items: center;
 }
-.navbar h1 {
-  padding-top: 750px;
+.header h1 {
+  padding-top: 30px;
   padding-bottom: 30px;
   font-size: 50px;
 }
