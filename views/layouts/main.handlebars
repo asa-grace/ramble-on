@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/resetCSS">
+    <link rel="stylesheet" href="/stylesheets/subs-style.css">
+
+    <title>Ramble On</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Ramble On</h1>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                {{#if loggedIn}}
+                <li class="nav-item">
+                    <a class="nav-link active" href="/dashboard">Your Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Logout</a>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
+    <!--<h2>
+        Ramble on is designed for the travel lover! This is a place where you can find all sorts of information on any travel related topic. You can find reviews on everything from traver gear and travel tips to the best restaurants and entertainment in the city your visiting. Register with us today to start creating your own reviews on any travel topic you desire. The world is your hands and it's up to you to share what's in it with others!
+    </h2> -->
+
+    <main>
+    {{{body}}}
+    </main>
+
+    <br>
+    <footer>
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="/images/ramble-on-logo.png">
+                        <p>Ramble On will help you with tips, recommendations and more for your next adventure!.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Features</h4>
+                        <p>Deal & Offers</p>
+                        <p>Customer Reviews</p>
+                        <p>Register</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Contact us</h4>
+                        <p>Email: Ramble-on@gmail.com</p>
+                        <p>Phone: 800-666-000</p>
+                        <p>Outside USA: 855-555-5555</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow us</h4>
+                        <p>Facebook</p>
+                        <p>YouTube</p>
+                        <p>Instagram</p>
+                    </div>
+                    <hr>
+                    <p class="copyright">Ramble On 2021</p>
+                </div>
+            </div>
+    </footer>
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+
+    
+
+</body>
+
+</html>

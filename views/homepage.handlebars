@@ -1,0 +1,156 @@
+<section class="features">
+    <h1>Featured Destination</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <div class="feature-img">
+                        <img src="/images/travel-1.jpg">
+                        <!-- <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                </div> -->
+                    </div>
+                    <div class="feature-details">
+                        <h4>Santorini Greece</h4>
+                        <p>Oia is a coastal town on the northwestern tip of Santorini, a Greek Aegean island. The
+                            town has
+                            whitewashed houses carved into the rugged clifftops, and overlooks a vast caldera filled
+                            with water</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <div class="feature-img">
+                        <img src="/images/travel-2.jpg">
+                        <!-- <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                </div> -->
+                    </div>
+                    <div class="feature-details">
+                        <h4>Paris France</h4>
+                        <p>The Trocadéro, site of the Palais de Chaillot, Paris, France, in the 16th
+                            arrondissement,across the
+                            Seine from the Eiffel Tower. Also the name of the 1878 palace which was demolished in
+                            1937.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <div class="feature-img">
+                        <img src="/images/travel-3.jpg">
+                        <!-- <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div> -->
+                    </div>
+                    <div class="feature-details">
+                        <h4>Venice Beach Los Angeles</h4>
+                        <p>The World famous Venice Beach Boardwalk is not to be missed. If you are visiting the Los
+                            Angeles area,
+                            you owe it to yourself to come to Southern California’s number one visitor attraction.
+                        </p>
+                        <!-- <div>
+                <span><i class="fas fa-map-marker"></i></span>
+                <span><i class="fas fa-map-marker"></i></span>
+                <span><i class="fas fa-map-marker"></i></span>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="user-content">
+    <ol class="post-list list-group list-group-numbered">
+        {{#each posts as |post|}}
+        <li class="list-group-item">
+            {{> post-info post }}
+        </li>
+        <br>
+        {{/each}}
+    </ol>
+</section>
+
+<section class="gallery">
+    <h1>Ramble On Gallery</h1>
+    <p>Pick a category and read user's reviews</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="gallery-box">
+                    <img src="/images/FOOD.png">
+                    <h4>FOOD</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-box">
+                    <img src="/images/CRUISE.png">
+                    <h4>TRAVEL</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-box">
+                    <img src="/images/MOAB.png">
+                    <h4>USA-famous</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-box">
+                    <img src="/images/INDIA.png">
+                    <h4>WORLD-famous</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="users-feedback">
+    <h1>Users Reviews</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="user-review">
+                    <p>Ramble-On made my travel so easy, I found everything that I need to know in Los Angeles.
+                        Thank you!!!</p>
+                    <h5>John Smith</h5>
+                    <small>Los Angeles</small>
+                </div>
+                <img src="/images/user1.jpg">
+            </div>
+            <div class="col-md-4">
+                <div class="user-review">
+                    <p>Ramble-On made my travel so easy, I found everything that I need to know in Paris.
+                        Thank you!!!</p>
+                    <h5>Paul Smith</h5>
+                    <small>Los Angeles</small>
+                </div>
+                <img src="/images/user2.jpg">
+
+            </div>
+            <div class="col-md-4">
+                <div class="user-review">
+                    <p>Ramble-On made my travel so easy, I found everything that I need to know in India.
+                        Thank you!!!</p>
+                    <h5>Mary Smith</h5>
+                    <small>Los Angeles</small>
+                </div>
+                <img src="/images/user3.jpg">
+            </div>
+        </div>
+    </div>
+</section>
