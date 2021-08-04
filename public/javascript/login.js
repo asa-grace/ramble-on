@@ -1,8 +1,8 @@
 document.querySelector("#login-btn").addEventListener("click", function () {
-  document.querySelector(".modal").classList.add("active");
+  document.querySelector(".popup").classList.add("active");
 });
 document
-  .querySelector(".modal close-btn")
+  .querySelector(".popup .close-btn")
   .addEventListener("click", function () {
-    document.querySelector(".modal").classList.remove("active");
+    document.querySelector(".popup").classList.remove("active");
   });
