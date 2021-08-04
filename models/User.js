@@ -1,6 +1,10 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 const bcrypt = require("bcrypt");
+<<<<<<< HEAD
+=======
+const jwt = require("jsonwebtoken");
+>>>>>>> 296b3c84afc73c321aea43f8a4c87fdb94313728
 
 // Create User model
 class User extends Model {
