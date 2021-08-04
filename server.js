@@ -1,3 +1,4 @@
+// Requiring npm packages
 const path = require("path");
 const express = require("express");
 const session = require("express-session");
@@ -26,11 +27,14 @@ app.use(session(sess));
 
 const hbs = exphbs.create({ helpers });
 
+// Set Handlebars
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
+// Express Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 // Built in Express.js middleware function that can take all the contents of a folder and serve them as static assets
 app.use(express.static(path.join(__dirname, "public")));
 

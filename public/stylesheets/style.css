@@ -5,22 +5,23 @@
 .header {
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/public/images/banner3.jpg);
-  height: auto;
+    url(/images/banner3.jpg);
+  height: 900px;
   background-position: center;
   background-attachment: fixed;
   padding-top: 20px;
   text-align: center;
   color: #fff;
 }
+
 .header img {
   width: 170px;
   float: left;
 }
 
-.login-btn {
+.login-btn,
+.home-btn {
   width: 100px;
-  padding: 8px 0;
   outline: none !important;
   border: 2px solid #fff;
   border-radius: 50px;
@@ -28,11 +29,12 @@
   color: #fff;
   float: left;
 }
+
 .input {
   align-items: center;
 }
 .header h1 {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
   font-size: 50px;
 }

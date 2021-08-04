@@ -19,10 +19,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <h1>Ramble On</h1>
+            <h1>Ramble-On</h1>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/">Home</a>
+                    <a class="nav-link active home-btn" href="/">Home</a>
                 </li>
                 {{#if loggedIn}}
                 <li class="nav-item">
@@ -33,12 +33,25 @@
                 </li>
                 {{else}}
                 <li class="nav-item">
-                    <a class="nav-link" href="/login">Login</a>
+                    <a class="nav-link login-btn" href="/login">Login</a>
                 </li>
                 {{/if}}
             </ul>
         </nav>
     </header>
+    <section class="header">
+        <div class="container">
+            <div class="input">
+                <h1>Travel with Ramble-On across the world!</h1>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Country or City">
+                    <div class="input-group-append">
+                        <button type="submit" class="input-group-text btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--<h2>
         Ramble on is designed for the travel lover! This is a place where you can find all sorts of information on any travel related topic. You can find reviews on everything from traver gear and travel tips to the best restaurants and entertainment in the city your visiting. Register with us today to start creating your own reviews on any travel topic you desire. The world is your hands and it's up to you to share what's in it with others!
     </h2> -->
