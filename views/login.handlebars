@@ -1,66 +1,42 @@
-<form class="container mt-4">
-    <div class="card">
-        <div class="card-header">
-            <h4>Login</h4>
-        </div>
-        <div class="card-body">
-            <form action="/user/subscribe" method="POST" class="login-form">
-                <div class="form-group">
-                    <label for="email-login">Email</label>
-                    <input type="text" class="form-control" id="email-login" name="email">
+<br>
+<form class="login-form form-group">
+  <h1 class="h3 mb-3 fw-normal">Login</h1>
 
-                </div>
-                <div class="form-group">
-                    <label for="password-login">Password</label>
-                    <input type="text" class="form-control" id="password-login" name="password">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="email-login" placeholder="Email" autofocus="true">
+    <label for="email-login">Email</label>
+  </div>
 
-                </div>
-                <button type="submit" class="btn btn-primary">Login</button>
-            </form>
-        </div>
-    </div>
-    {{#if message}}
-    <h4 class="alert alert-danger mt-4">{{message}}</h4>
-    {{/if}}
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="password-login" placeholder="Password" autofocus="true">
+    <label for="password-login">Password</label>
+  </div>
+
+  <button class="btn btn-primary btn-lg" type="submit">Login</button>
+
 </form>
 
-<form class="container mt-4">
-    <div class="card">
-        <div class="card-header">
-            <h4>Register Form</h4>
-        </div>
-        <div class="card-body">
-            <form action="/user/subscribe" method="POST" class="register-form">
-                <div class="form-group">
-                    <label for="username-register">Name</label>
-                    <input type="text" class="form-control" id="username-register" name="name">
+<br>
 
-                </div>
-                <div class="form-group">
-                    <label for="email-register">Email address</label>
-                    <input type="text" class="form-control" id="email-register" name="email">
+<form class="signup-form form-group">
+  <h1 class="h3 mb-3 fw-normal">Sign up!</h1>
 
-                </div>
-                <div class="form-group">
-                    <label for="password-register">Password</label>
-                    <input type="text" class="form-control" id="password-register" name="password">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="username-signup" autofocus="true">
+    <label for="username-signup">Username</label>
+  </div>
 
-                </div>
-                <div class="form-group">
-                    <label for="passwordConfirm">Confirm Password</label>
-                    <input type="text" class="form-control" id="passwordConfirm" name="passwordConfirm">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="email-signup" autofocus="true">
+    <label for="email-signup">Email</label> 
+  </div>
 
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Register</button>
-            </form>
-        </div>
-    </div>
-    {{#if message}}
-    <h4 class="alert alert-danger mt-4">{{message}}</h4>
-    {{/if}}
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="password-signup" autofocus="true">
+    <label for="password-signup">Password</label>
+  </div>
+
+  <button class="btn btn-primary btn-lg" type="submit">Sign up</button>
 </form>
 
+<script src="/javascript/login.js"></script>

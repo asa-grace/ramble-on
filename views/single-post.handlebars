@@ -1,14 +1,14 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
-<div class="card">
+<div class="card-body">
 
-  <form class="card-body comment-form">
-
+  <form class="form-group comment-form">
+    <br>
     <div>
       <textarea name="comment-body"></textarea>
     </div>
-
+    <br>
     <div>
       <button class="add-comment w-100 btn btn-lg btn-info mb-3" type="submit">add comment</button>
     </div>
@@ -18,7 +18,7 @@
 </div>
 {{/if}}
 
-<form class="card-body">
+<form class="form-group">
 {{> comments post.comments}}
 </form>
 
