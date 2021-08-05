@@ -1,0 +1,43 @@
+<br>
+<section>
+  <h2>Create New Post</h2>
+
+  <form class="new-content form-group">
+    <div>
+      <label for="content-title">Title</label>
+      <input type="text" id="content-title" name="content-title" />
+    </div>
+    <br>
+    <div>
+      <label for="content">Content</label>
+      <textarea id="create-content" name="content"></textarea>
+    </div>
+    <br>
+    <button type="submit" class="w-100 btn btn-lg btn-info mb-3">Create</button>
+  </form>
+</section>
+
+<br>
+
+{{#if posts.length}}
+<section>
+  <h2>Your Content</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <div class="edit-btn">
+      <btn class="btn btn-lg btn-info mb-3"><a href="/dashboard/edit/{{post.id}}" class="edit-content-form">Edit Content</a></btn>
+    
+    </li>
+    {{/each}}
+  </div>
+
+  </ol>
+
+
+  
+</section>
+{{/if}}
+
+<script src="/javascript/add-content.js"></script>

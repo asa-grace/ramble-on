@@ -1,0 +1,29 @@
+<br>
+<section>
+    <h2>Edit Content</h2>
+
+    <form class="edit-content-form form-group">
+
+        <div>
+          <label for="content-title"></label>
+          <input id="content-title" name="content-title" type="text" placeholder="{{post.title}}"/>
+        </div>
+
+        <div>
+          <label for="content"></label>
+          <textarea name="content" placeholder="{{post.content}}"></textarea>
+        </div>
+    <br>  
+        <button type="submit" class="w-100 btn btn-lg btn-info mb-3">
+          Update
+        </button>
+
+        <button type="button" class="delete-content-btn w-100 btn btn-lg btn-danger mb-3">
+          Delete
+        </button>
+    </form>
+</section>
+
+<script src="/javascript/edit-content.js"></script>
+<script src="/javascript/delete-content.js"></script>
+<script src="/javascript/comment.js"></script>
