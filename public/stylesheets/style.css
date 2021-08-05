@@ -15,10 +15,25 @@
   color: #fff;
 }
 
-textarea{
+textarea {
   height: 250px;
   width: 500px;
 }
+
+#content-title {
+  width: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.edit-btn {
+  text-align: center;
+}
+
+
 
 .comment-card {
   text-align: center;
@@ -38,7 +53,7 @@ textarea{
 .home-btn,
 .your-content-btn,
 .logout-btn,
-.signup-btn {
+.signup-btn  {
   width: 150px;
   outline: none !important;
   border: 2px solid #fff;
@@ -116,7 +131,8 @@ h4 {
   padding: 100px 0;
   padding-left: 10%;
 }
-h1 {
+h1,
+h2 {
   text-align: center;
 }
 
