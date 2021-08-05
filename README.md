@@ -32,6 +32,8 @@
   
   Tracee Brown: https://github.com/tra8brown
 
+  Matt Bisbee: https://github.com/mattbisbee
+
   ## **License**
   ![License](https://img.shields.io/badge/License-MIT-orange?style=plastic&logo=appveyor.svg)
   <br>
@@ -39,7 +41,7 @@
   <br>
 
   ## **Features**
-  Heroku Site: 
+  Heroku Site: https://rocky-bayou-69146.herokuapp.com/
 
   ## **Languages**
    CSS, HTML, JavaScript, Handlebars
@@ -64,8 +66,4 @@
   No tests have been created for this application
 
   ## **Contribute**
-  Find me on [GitHub](https://www.github.com/mattbisbee)
-  <br>
-  Send me an [Email](mailto:aldhelm7@gmail.com)
-  <br>
   [Contributor Covenant](https://www.contributor-covenant.org/)
